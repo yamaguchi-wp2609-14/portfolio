@@ -57,8 +57,11 @@ h2 {
 
 h3 {
     font-size: var(--text-24);
-    padding-left: 100px;
+    /* padding-left: 100px; */
     margin-bottom: 18px;
+    width: 654px;
+    border-bottom: 3px solid var(--color-main);
+    margin: 0 auto;
 }
 
 /* indexここから */
