@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+:root {
+    /* カラー */
+    --color-base: #fff8f4;
+    --color-bgc: #d39b8b;
+    --color-main: #e5b09f;
+    --color-accent: #738c78;
+    --color-accent-sub: #ad6048;
+    --color-text: #49362f;
+    --color-text-sub: #795f56;
+
+
+    /* 余白 */
+    --space-8: 8px;
+    --space-12: 12px;
+    --space-16: 16px;
+    --space-24: 24px;
+    --space-40: 40px;
+
+    /* フォントサイズ */
+    --text-12: 12px;
+    --text-16: 16px;
+    --text-20: 20px;
+    --text-24: 24px;
+    --text-32: 32px;
+    --text-36: 36px;
+
+    /* フォントウェイト */
+    --weight-m: 500;
+    --weight-b: 700;
+
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 16px;
+    color: var(--color-text);
+    line-height: 1.5;
+    background-color: var(--color-bgc);
+}
+
+.inner-wrap {
+    width: 69%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+h2 {
+    font-size: var(--text-32);
+    font-weight: var(--weight-b);
+    letter-spacing: 0.05;
+    text-align: center;
+    padding: 65px 0 45px;
+}
+
+h3 {
+    font-size: var(--text-24);
+    padding-left: 100px;
+    margin-bottom: 18px;
+}
+
+/* indexここから */
+.index-inner-wrap {
+    width: 69%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.index-main {
+    min-height: 450px;
+    background-color: var(--color-base);
+    border-radius: 20px 0 0 0;
+}
+
+
+.header-logo {
+    margin: 20px 0 16px 10px;
+}
+
+.g-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1px
+}
+
+.g-nav li {
+    flex-basis: 160px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.another-page {
+    background-color: var(--color-main);
+}
+
+.g-nav li a {
+    font-weight: bold;
+}
+
+.g-nav li a:hover {
+    font-size: var(--text-24);
+    font-weight: bold;
+}
+
+.this-page {
+    background-color: var(--color-base);
+    font-size: var(--text-24);
+}
+
+.main-name {
+    width: 328px;
+    padding-bottom: 46px;
+    font-size: var(--text-36);
+    font-weight: 900;
+    line-height: 0.9;
+    margin: 0 auto 46px;
+    border-bottom: 5px solid var(--color-main);
+}
+
+
+.top-main {
+    text-align: center;
+    padding-top: 65px;
+
+}
+
+/* indexここまで */
+/* ABOUTここから */
+
+.about-main {
+    min-height: 100vh;
+    background-color: var(--color-base);
+    border-radius: 20px 0 0 0;
+}
+
+.about-all {
+    display: flex;
+    gap: 20px;
+}
+
+/* ABOUTここまで */
+/* skillsここから */
+.skills-main {
+    min-height: 100vh;
+    background-color: var(--color-base);
+    border-radius: 20px 0 0 0;
+}
+
+/* skillsここまで */
+/* contactここから */
+.contact-main {
+    min-height: 100vh;
+    background-color: var(--color-base);
+    border-radius: 20px 0 0 0;
+}
+
+/* contacここまで */
