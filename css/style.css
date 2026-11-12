@@ -145,10 +145,26 @@ h3 {
 .about-all {
     display: flex;
     gap: 20px;
+    justify-content: center;
+    margin-top: var(--space-40);
 }
 
-.about-daifuku{
+.about-daifuku {
     width: 200px;
+}
+
+.about-textme {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+    width: 360px;
+
+}
+
+.about-move {
+    display: flex;
+    gap: 65px;
+    margin: 0 auto;
 }
 
 /* ABOUTここまで */
