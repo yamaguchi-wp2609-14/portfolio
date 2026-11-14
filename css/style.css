@@ -26,7 +26,6 @@
     --text-36: 36px;
 
     /* フォントウェイト */
-
     --weight-b: 700;
     --weight-m: 500;
 
@@ -113,6 +112,19 @@ h3 {
     margin-top: 67px;
 }
 
+/* マウス重ねたときの色変更設定 */
+.next a:hover {
+    color: var(--color-accent-sub);
+}
+
+.back a:hover {
+    color: var(--color-accent-sub);
+}
+
+.contact-back a:hover {
+    color: var(--color-accent-sub);
+}
+
 /* 問い合わせページのbackやじるし位置設定 */
 .contact-back {
     color: var(--color-accent);
@@ -195,7 +207,7 @@ h3 {
     display: flex;
     gap: var(--space-20);
     justify-content: center;
-    margin: var(--space-40) 0 var(--space-40);
+    margin: var(--space-40) 0 80px;
 }
 
 /* 画像サイズ表示位置 */
@@ -244,7 +256,31 @@ h3 {
 }
 
 .skill-sec {
-    margin-bottom: 84px;
+    margin-bottom: var(--space-40);
+}
+
+/* ワークス案内　ボタン文字位置設定 */
+.work-go {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    font-weight: var(--weight-b);
+    margin-bottom: var(--space-40);
+}
+
+.work-btn {
+    width: 150px;
+    font-size: var(--space-20);
+    padding: var(--space-8);
+    background-color: var(--color-accent);
+    color: var(--color-base);
+    margin: 0 auto;
+}
+
+.work-go a:hover {
+    /* color: var(--color-text); */
+    transform: translateX(20px);
 }
 
 /* skillsここまで */
@@ -280,6 +316,18 @@ h3 {
 }
 
 /* contacここまで */
+
+/* ｗｏｒｋｓここから */
+/* ワークｈ３の下余白設定 */
+.works-h3 {
+    margin-bottom: var(--space-16);
+}
+
+.works-sec p {
+    text-align: center;
+}
+
+/* ｗｏｒｋｓここまで */
 
 /* フッター ここから*/
 /* 中央配置文字色上下余白 */
