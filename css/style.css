@@ -23,15 +23,17 @@
     --text-12: 12px;
     --text-20: 20px;
     --text-24: 24px;
-
     --text-36: 36px;
 
     /* フォントウェイト */
 
     --weight-b: 700;
+    --weight-m: 500;
 
 }
 
+/* 共通設定　 */
+/* フォント　文字　背景 */
 body {
     font-family: "Noto Sans JP", sans-serif;
     font-size: 16px;
@@ -40,12 +42,41 @@ body {
     background-color: var(--color-bgc);
 }
 
-.inner-wrap {
+/* 各ページの幅と中央配置 */
+.inner-wrap,
+.index-inner-wrap {
     width: 69%;
     max-width: 1000px;
     margin: 0 auto;
-
 }
+
+/* TOPページだけ下に余白を追加 */
+.index-inner-wrap {
+    margin-bottom: 16px;
+}
+
+/* 共通設定　背景　角丸 */
+.index-main,
+.about-main,
+.skills-main,
+.contact-main {
+    background-color: var(--color-base);
+    border-radius: 20px 0 0 0;
+}
+
+/* TOPページ　の画面高さ */
+.index-main {
+    min-height: 450px;
+}
+
+/* その他のページ　画面高さ */
+.about-main,
+.skills-main,
+.contact-main {
+    min-height: 100vh;
+}
+
+/* ページタイトル　文字　余白 */
 
 h2 {
     font-size: var(--text-24);
@@ -55,6 +86,7 @@ h2 {
     padding: var(--space-32) 0 var(--space-24);
 }
 
+/* ｈ３見出しの文字設定　下線 */
 h3 {
     font-size: var(--text-20);
     margin-bottom: var(--space-16);
@@ -64,14 +96,14 @@ h3 {
     margin: 0 auto;
 }
 
-/* ＜＞のサイズと縦調整 */
+/* ＜backとnext＞の画像サイズと縦調整 */
 .arrow {
     width: 16px;
     height: 18px;
     transform: translateY(-2px);
 }
 
-/* ＜戻ると次＞フォントの位置設定 */
+/* ＜backとnext＞配置設定 */
 .move {
     display: flex;
     gap: 300px;
@@ -81,7 +113,7 @@ h3 {
     margin-top: 67px;
 }
 
-/* 戻るやじるしフォント位置設定 */
+/* 問い合わせページのbackやじるし位置設定 */
 .contact-back {
     color: var(--color-accent);
     font-weight: var(--weight-b);
@@ -89,16 +121,19 @@ h3 {
 }
 
 /* ヘッダーここから */
+/* ロゴ画像余白 */
 .header-logo {
     margin: 20px 0 16px 10px;
 }
 
+/* ナビメニュー横並び右寄せ */
 .g-nav {
     display: flex;
     justify-content: flex-end;
     gap: 1px
 }
 
+/* ナビメニューのタブの幅高さ文字配置 */
 .g-nav li {
     flex-basis: 160px;
     height: 54px;
@@ -108,49 +143,33 @@ h3 {
     border-radius: 20px 20px 0 0;
 }
 
-.another-page {
-    background-color: var(--color-main);
-}
-
-.g-nav li a {
-    font-weight: bold;
-}
-
-.g-nav li a:hover {
-    font-size: var(--text-24);
-    font-weight: bold;
-}
-
+/* アクティブページの背景文字サイズ */
 .this-page {
     background-color: var(--color-base);
     font-size: var(--text-24);
 }
 
+/* アクティブじゃないページの背景 */
+.another-page {
+    background-color: var(--color-main);
+}
+
+/* ナビメニューの文字太字 */
+.g-nav li a {
+    font-weight: bold;
+}
+
+/* ナビメニューのマウス乗せたときの文字サイズ */
+.g-nav li a:hover {
+    font-size: var(--text-24);
+    font-weight: bold;
+}
+
 /* ヘッダーここまで */
 
-/* フッター ここから*/
-footer {
-    text-align: center;
-    font-weight: var(--weight-b);
-    color: var(--color-main);
-    padding: 24.5px 0;
-}
 
-/* フッターここまで */
 /* indexここから */
-.index-inner-wrap {
-    width: 69%;
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-bottom: 16px;
-}
-
-.index-main {
-    min-height: 450px;
-    background-color: var(--color-base);
-    border-radius: 20px 0 0 0;
-}
-
+/* メインh2　サイズ　文字　下線設定 */
 .main-name {
     width: 32.8%;
     min-width: 250px;
@@ -162,6 +181,7 @@ footer {
     border-bottom: 5px solid var(--color-main);
 }
 
+/* トップページの文字配置余白 */
 .top-main {
     text-align: center;
     padding-top: 65px;
@@ -170,25 +190,10 @@ footer {
 /* indexここまで */
 
 /* ABOUTここから */
-
-.about-main {
-    min-height: 100vh;
-    background-color: var(--color-base);
-    border-radius: 20px 0 0 0;
-}
-
-/* .about-h3 {
-    font-size: var(--text-20);
-    margin-bottom: var(--space-16);
-    width: 65%;
-    max-width: 654px;
-    border-bottom: 3px solid var(--color-main);
-    margin: 0 auto;
-} */
-
+/* プロフィール画像とテキスト文並び配置 */
 .about-all {
     display: flex;
-    gap: 20px;
+    gap: var(--space-20);
     justify-content: center;
     margin: var(--space-40) 0 var(--space-40);
 }
@@ -201,14 +206,17 @@ footer {
     object-position: 0 80%;
 }
 
+/* 名前の太さ */
 .about-name {
     font-weight: var(--weight-m);
 }
 
+/* 名前ローマ字サイズ */
 .about-names {
     font-size: var(--text-12);
 }
 
+/* 自己紹介文配置調整 */
 .about-textme {
     display: flex;
     flex-direction: column;
@@ -219,20 +227,7 @@ footer {
 
 /* ABOUTここまで */
 
-/* skillsここから */
-.skills-main {
-    min-height: 100vh;
-    background-color: var(--color-base);
-    border-radius: 20px 0 0 0;
-}
-
-/* 
-.skill-h3 {
-    display: flex;
-    flex-direction: column;
-
-} */
-
+/* アイコン並び配置 */
 .skill-icons {
     display: grid;
     grid-template-columns: repeat(3, 150px);
@@ -242,6 +237,7 @@ footer {
 
 }
 
+/* スキル一覧した余白 */
 .skill-h3-text {
     padding-left: 17.7%;
     margin: 34px 0 20px;
@@ -254,33 +250,22 @@ footer {
 /* skillsここまで */
 
 /* contactここから */
-.contact-main {
-    min-height: 100vh;
-    background-color: var(--color-base);
-    border-radius: 20px 0 0 0;
-}
-
-.contact-h3 {
-    font-size: var(--text-20);
-    /* margin-bottom: var(--space-16); */
-    width: 65%;
-    max-width: 654px;
-    border-bottom: 3px solid var(--color-main);
-    margin: 0 auto;
-}
-
+/* お問い合わせ全体中央配置 */
 .contact-sec {
     text-align: center;
 }
 
+/* お問い合わせテキスト文上限余白 */
 .contact-sec p {
     margin: 70px 0;
 }
 
+/* 問い合わせページのバックの上余白 */
 .contact-back {
     margin-top: 67px;
 }
 
+/* メールアイコンのサイズと縦位置 */
 .mail-add {
     width: 27px;
     height: 20px;
@@ -288,9 +273,21 @@ footer {
 
 }
 
+/* メールアドレス文字サイズと色 */
 .contact-sec a {
     font-size: var(--text-24);
     color: var(--color-text-sub);
 }
 
 /* contacここまで */
+
+/* フッター ここから*/
+/* 中央配置文字色上下余白 */
+footer {
+    text-align: center;
+    font-weight: var(--weight-b);
+    color: var(--color-main);
+    padding: 24.5px 0;
+}
+
+/* フッターここまで */
