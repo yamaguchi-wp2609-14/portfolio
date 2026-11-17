@@ -18,6 +18,7 @@
     --space-24: 24px;
     --space-32: 32px;
     --space-40: 40px;
+    --space-40: 56px;
 
     /* フォントサイズ */
     --text-12: 12px;
@@ -109,7 +110,7 @@ h3 {
     color: var(--color-accent);
     font-weight: var(--weight-b);
     justify-content: center;
-    margin-top: 67px;
+    margin-top: var(--space-40);
 }
 
 /* マウス重ねたときの色変更設定 */
@@ -243,7 +244,7 @@ h3 {
 .skill-icons {
     display: grid;
     grid-template-columns: repeat(3, 150px);
-    gap: 41px 67px;
+    gap: 41px 45px;
     /* text-align: center; */
     justify-content: center;
 
@@ -256,7 +257,7 @@ h3 {
 }
 
 .skill-sec {
-    margin-bottom: var(--space-40);
+    margin-bottom: var(--space-56);
 }
 
 /* ワークス案内　ボタン文字位置設定 */
@@ -266,7 +267,7 @@ h3 {
     text-align: center;
     gap: 8px;
     font-weight: var(--weight-b);
-    margin-bottom: var(--space-40);
+    margin: 67px 0;
 }
 
 .work-btn {
@@ -280,7 +281,7 @@ h3 {
 
 .work-go a:hover {
     /* color: var(--color-text); */
-    transform: translateX(20px);
+    transform: translateX(8px);
 }
 
 /* skillsここまで */
@@ -332,9 +333,11 @@ h3 {
 /* フッター ここから*/
 /* 中央配置文字色上下余白 */
 footer {
+
     text-align: center;
     font-weight: var(--weight-b);
     color: var(--color-main);
+    background-color: var(--color-base);
     padding: 24.5px 0;
 }
 
