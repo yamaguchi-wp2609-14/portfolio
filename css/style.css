@@ -268,7 +268,7 @@ h3 {
 }
 
 .work-table {
-    width: 350px;
+    width: 500px;
     background-color: #ffffff;
     padding-right: var(--space-20);
     margin: 0 auto;
@@ -276,9 +276,10 @@ h3 {
 }
 
 .work-h2 {
-    border-left: 3px solid var(--color-bgc);
+    border-left: 5px solid var(--color-bgc);
     padding: var(--space-8);
     letter-spacing: 0.3rem;
+    margin-bottom: var(--space-16);
 }
 
 .work-td1 {
