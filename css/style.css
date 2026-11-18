@@ -257,7 +257,8 @@ h3 {
 }
 
 .skill-sec {
-    margin-bottom: var(--space-56);
+    /* margin-bottom: var(--space-56); */
+    margin-bottom: 88px;
 }
 
 /* ワークス案内　ボタン文字位置設定 */
