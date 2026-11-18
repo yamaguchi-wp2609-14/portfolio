@@ -18,7 +18,7 @@
     --space-24: 24px;
     --space-32: 32px;
     --space-40: 40px;
-    --space-40: 56px;
+    --space-56: 56px;
 
     /* フォントサイズ */
     --text-12: 12px;
@@ -262,6 +262,34 @@ h3 {
 }
 
 /* ワークス案内　ボタン文字位置設定 */
+.works-text {
+    padding-left: 17.7%;
+    margin-bottom: var(--space-56);
+}
+
+.work-table {
+    width: 350px;
+    background-color: #ffffff;
+    padding-right: var(--space-20);
+    margin: 0 auto;
+
+}
+
+.work-h2 {
+    border-left: 3px solid var(--color-bgc);
+    padding: var(--space-8);
+    letter-spacing: 0.3rem;
+}
+
+.work-td1 {
+    padding-left: 16px;
+}
+
+/* th {
+    padding: var(--space-8);
+    border-left: 3px solid #738c78;
+} */
+
 .work-go {
     display: flex;
     flex-direction: column;
